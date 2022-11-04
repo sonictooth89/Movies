@@ -1,0 +1,18 @@
+<h2>My favourite movies</h2>
+<table class="fame-table">
+    <tr>
+        <th class="fame-item">Position in rank</th>
+        <th class="fame-item">Movie's title</th>
+        <th class="fame-item">Director</th>
+        <th class="fame-item">Score</th>
+    </tr>
+
+    {{#each movies}}
+    <tr>
+        <td class="fame-item">{{this.place}}</td>
+        <td class="fame-item">{{this.movie.title}}</td>
+        <td class="fame-item">{{this.movie.score}}</td>
+        <td class="fame-item">{{this.warrior.id}}</td>
+    </tr>
+    {{/each}}
+</table>

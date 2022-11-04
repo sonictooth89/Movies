@@ -1,0 +1,22 @@
+<h2>Add your movie</h2>
+<form action="/movie" method="post">
+    <table class="form-table">
+        <tr><label>
+                <td>Title:</td>
+                <td><input type="text" name="title" minlength="3" maxlength="50"></td>
+            </label>
+        </tr>
+        <tr><label>
+                <td>Director:</td>
+                <td><input type="txt" name="director" minlength="3" maxlength="256"></td>
+            </label>
+        </tr>
+        <tr><label>
+                <td>Score:</td>
+                <td><input type="number" name="score" value="1" value="1" min="1" max="10"></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <button class="register" type="submit"> Add </button>
+</form>
