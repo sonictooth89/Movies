@@ -1,22 +1,23 @@
-<h2>Add your movie</h2>
-<form action="/movie" method="post">
-    <table class="form-table">
-        <tr><label>
-                <td>Title:</td>
-                <td><input type="text" name="title" minlength="3" maxlength="50"></td>
-            </label>
-        </tr>
-        <tr><label>
-                <td>Director:</td>
-                <td><input type="txt" name="director" minlength="3" maxlength="256"></td>
-            </label>
-        </tr>
-        <tr><label>
-                <td>Score:</td>
-                <td><input type="number" name="score" value="1" value="1" min="1" max="10"></td>
-        </tr>
-    </table>
-    <br>
-    <hr>
-    <button class="register" type="submit"> Add </button>
-</form>
+<div class="container">
+    <h2><strong>Add your movie</strong></h2>
+    <form class="row g-3" action="/movie" method="post">
+        <table class="form-table">
+            <div class="col-md-6">
+                <label for="inputTitle" class="form-label">Title of movie</label>
+                <input type="text" class="form-control form-label" name="title" id="inputTitle" minlength="3" maxlength="50">
+            </div>
+            <br>
+            <div class="col-md-6">
+                <label for="inputDirector" class="form-label">Director</label>
+                <input type="text" class="form-control form-label" name="director" id="inputDirector" minlength="3" maxlength="256">
+            </div>
+            <br>
+            <div class="col-md-2">
+                <label for="inputScore" class="form-label">Your score (1 - 10)</label>
+                <input type="number" class="form-control" id="inputScore" name="score" value="1" value="1" min="1" max="10">
+            </div>
+            </table>
+            <br>
+            <button class="register btn btn-primary" id="btn-add" type="submit">+ Add </button>
+            </form>
+</div>

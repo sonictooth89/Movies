@@ -7,7 +7,7 @@ export const favouriteMoviesRouter = Router();
 favouriteMoviesRouter
 
     .get('/', async (req, res): Promise<void> => {
-        const topMovies = await (await MovieRecord.topList(3))
+        const topMovies = await (await MovieRecord.topList(10))
         .map((movie, index) => {
             return {
                 place: index + 1,
