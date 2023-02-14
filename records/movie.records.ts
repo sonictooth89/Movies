@@ -18,19 +18,19 @@ export class MovieRecord {
     constructor(obj: Omit<MovieRecord, 'insert' | 'update'>) {
         const {id, title, director, score} = obj;
 
-        const stats = [score];
+        // const stats = [score];
 
-        const sum = stats.reduce((prev, curr) => prev + curr, 0);
+        // const sum = stats.reduce((prev, curr) => prev + curr, 0);
 
-        for (const stat of stats) {
-            if (stat < 1) {
-                throw new ValidationError('The minimum score must be 1.')
-            }
-        }
+        // for (const stat of stats) {
+        //     if (stat < 1) {
+        //         throw new ValidationError('The minimum score must be 1.')
+        //     }
+        // }
 
-        if (sum > 10) {
-            throw new ValidationError('The maximum score must be 10.');
-        };
+        // if (sum > 10) {
+        //     throw new ValidationError('The maximum score must be 10.');
+        // };
 
         if (title.length < 3 || title.length > 256) {
             throw new ValidationError (`The movie's title must have min 3 letter und max 256 letter.`)
