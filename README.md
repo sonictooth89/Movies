@@ -48,4 +48,4 @@ The following resources were used to create this project:
 
 ## Contact
 
-If you have any questions or feedback about this application, please contact me at your-email-address@domain.com.
+If you have any questions or feedback about this application, please contact me at em.nowak@icloud.com.
